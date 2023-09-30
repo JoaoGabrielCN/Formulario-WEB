@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulário CEFET-MG</h2>
+
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="mat">Numero de matricula:</label>
+            <input type="text" id="mat" name="mat" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="tel">Telefone de contato:</label>
+            <textarea id="tel" name="tel"required></textarea>
+
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <option value="Info">INFO</option>
+                <option value="Elelt">ELELT</option>
+                <option value="Camb">CAMB</option>
+            </select>
+
+            <fieldset>
+                <legend>Preferências de Contato</legend>
+                <label for="emailPref">E-mail:</label>
+                <input type="checkbox" id="emailPref" name="preferencias" value="email">
+                <br>
+
+                <label for="telefonePref">Telefone:</label>
+                <input type="checkbox" id="telefonePref" name="preferencias" value="telefone">
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
+        
+        </form>
+    </div>
+</body>
+</html>
